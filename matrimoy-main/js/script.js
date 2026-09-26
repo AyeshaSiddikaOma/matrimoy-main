@@ -8,6 +8,12 @@ let total = document.querySelector('#total')
 let btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
+
+
+
+
+
+    
   if (age.value >= 18) {
     ageResult.innerHTML = "Your are an adult";
 
