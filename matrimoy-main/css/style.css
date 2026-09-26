@@ -1,0 +1,203 @@
+
+
+/* =========================
+   2. MAIN HEADING
+========================= */
+
+/* =========================
+   1. GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background: #f4f5f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #252536;
+}
+
+
+/* =========================
+   2. MAIN HEADING
+========================= */
+
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #242438;
+  margin-bottom: 35px;
+  letter-spacing: -0.7px;
+}
+
+
+/* =========================
+   3. INPUT FIELDS
+========================= */
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto 18px;
+  padding: 15px 17px;
+
+  background: #ffffff;
+  border: 1px solid #e2e3eb;
+  border-radius: 10px;
+
+  color: #29293b;
+  font-size: 15px;
+  font-family: inherit;
+
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+input::placeholder {
+  color: #999aaa;
+}
+
+input:hover {
+  border-color: #d4a0b8;
+}
+
+input:focus {
+  border-color: #d63384;
+  box-shadow: 0 0 0 4px rgba(214, 51, 132, 0.09);
+}
+
+
+/* =========================
+   4. CHECK BUTTON
+========================= */
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 430px;
+  margin: 25px auto 30px;
+  padding: 15px;
+
+  background: #d63384;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  background: #bd2671;
+  box-shadow: 0 6px 16px rgba(214, 51, 132, 0.2);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+
+/* =========================
+   5. RESULT CARDS
+========================= */
+
+h2 {
+  width: 100%;
+  max-width: 430px;
+  min-height: 48px;
+  margin: 12px auto 0;
+  padding: 14px 16px;
+
+  background: #ffffff;
+  border: 1px solid #e9e9ef;
+  border-left: 4px solid #d63384;
+  border-radius: 8px;
+
+  color: #555568;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+  transition: all 0.2s ease;
+}
+
+h2:empty {
+  display: none;
+}
+
+
+/* =========================
+   6. FINAL ELIGIBILITY RESULT
+========================= */
+
+#total {
+  max-width: 430px;
+  margin: 25px auto 0;
+  padding: 18px;
+
+  background: #fff0f6;
+  border: 1px solid #f5c2d9;
+  border-radius: 10px;
+
+  color: #b42368;
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#total:empty {
+  display: none;
+}
+
+
+/* =========================
+   7. RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 480px) {
+  body {
+    padding: 25px 16px;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+
+  input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  h2 {
+    font-size: 13px;
+  }
+
+  #total {
+    font-size: 17px;
+  }
+}
