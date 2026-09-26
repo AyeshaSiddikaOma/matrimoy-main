@@ -9,21 +9,23 @@ let btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
 
+let ageCondition = age.value >=18;
+let jobCondition = job.value == "true";
+let salaryCondition = salary.value >= 10000;
 
 
 
 
-    
-  if (age.value >= 18) {
+  if (ageCondition) {
     ageResult.innerHTML = "Your are an adult";
 
 
- if (job.value == "true") {
+ if (jobCondition) {
     jobResult.innerHTML = "You are not unemployed"
 
     
 
-   if (salary.value >= 5000) {
+   if (jobCondition) {
     salaryResult.innerHTML = "You have enough money"
   } else {
     salaryResult.innerHTML = "Your are poor"
@@ -37,17 +39,23 @@ btn.addEventListener("click", () => {
  } else {
     ageResult.innerHTML = "Your are under age";
   }
-  allow()
+  allow(ageCondition,ageCondition, jobCondition)
 
 }
 );
 
 function allow (){
-if (age && salary && job) {
-    
+if (ageCondition && ageCondition && jobCondition) {
+    total.innerHTML = "You are eligible"
 
 }
+else{
 
+if(!ageCondition && !salaryCondition)
+    total.innerHTML = "You are not allowed for being under age and less amount of salary"
+
+
+}
 
 
 
