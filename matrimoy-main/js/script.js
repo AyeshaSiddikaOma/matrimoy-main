@@ -4,6 +4,7 @@ let salary = document.querySelector("#salary");
 let ageResult = document.querySelector("#ageResult");
 let jobResult = document.querySelector("#jobResult");
 let salaryResult = document.querySelector("#salaryResult");
+let total = document.querySelector('#total')
 let btn = document.querySelector("#btn");
 
 btn.addEventListener("click", () => {
@@ -36,11 +37,14 @@ btn.addEventListener("click", () => {
 );
 
 function allow (){
-
-
-
-
+if (age && salary && job) {
     
+
+}
+
+
+
+
 }
 
 
