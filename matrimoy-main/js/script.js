@@ -25,7 +25,7 @@ let salaryCondition = salary.value >= 10000;
 
     
 
-   if (jobCondition) {
+   if (salaryCondition) {
     salaryResult.innerHTML = "You have enough money"
   } else {
     salaryResult.innerHTML = "Your are poor"
@@ -44,18 +44,16 @@ let salaryCondition = salary.value >= 10000;
 }
 );
 
-function allow (){
-if (ageCondition && ageCondition && jobCondition) {
+function allow (ageCondition,salaryCondition, jobCondition){
+if (ageCondition && salaryCondition && jobCondition) {
     total.innerHTML = "You are eligible"
 
 }
-else{
 
-if(!ageCondition && !salaryCondition)
+else if (!ageCondition || !salaryCondition || !jobCondition){
     total.innerHTML = "You are not allowed for being under age and less amount of salary"
-
-
 }
+
 
 
 
