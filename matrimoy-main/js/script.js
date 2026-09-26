@@ -36,6 +36,10 @@ btn.addEventListener("click", () => {
 );
 
 function allow (){
+
+
+
+
     
 }
 
